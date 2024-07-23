@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
+
+.dark-mode #burger,
+.dark-mode #hide i,
+.dark-mode #hide-2 i,
+.dark-mode #hide-3 i,
+.dark-mode #hide-4 i,
+.dark-mode #hide-5 i,
+.dark-mode #hide-6 i{
+    color: white;
+}
+
+.light-mode #burger{
+    color: black;
+}
+
+.dark-mode{
+    background-color: black;
+    color: white;
+}
+
+.dark-mode .box-link-porshe a,
+.dark-mode .more a {
+    color: white;
+    border: 1px solid white;
+}
+
+.light-mode{
+    background-color: white;
+    color: black;
+}
+
+.light-mode #mode-i{
+    top: 38px;
+}
+.dark-mode #mode-i{
+    bottom:40px;
+}
+.dark-mode #mode{
+    background-color: white;
+    color: black;
+}
+.light-mode #mode{
+    background-color: black;
+    color: white;
+}
+
+.dark-mode .price a{
+    background-color: white;
+    color: black;
+}
+
+.dark-mode #burger-menu,
+.dark-mode .ul-brg button,
+.dark-mode .ul-brg a{
+    background-color: rgb(27, 27, 27);
+    color: white;
+}
+
+.dark-mode .box-txt a{
+    color: white;
+}
+
+.dark-mode #burger2{
+    background-color: rgb(59, 59, 59);
+    color: white;
+}
+
+.dark-mode #closeBurger{
+    background-color: white;
+    color: black;
+}
+
+.dark-mode #closeBurger {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    width: 1440px;
+    margin: auto;
+    padding: 20px 0px 20px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+#burger{
+    background: none;
+    border: none;
+    font-size: 22px;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+
+#logo-img{
+    object-fit: cover;
+    height: 17px;
+}
+
+#mode{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    border: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#mode-i{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap: 20px;
+    bottom: 0px;
+    top: 0px;
+    align-items: center;
+    justify-content: center;
+    transition: all .25s ease-in;
+}
+
+#burger-menu{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 900px;
+    width: 350px;
+    padding: 170px 0px 0px 30px; 
+    top: 0px;
+    left: -900px;
+    background-color: white;
+    transition: all .15s ease-in;
+    
+}
+
+#back{
+    position: absolute;
+    top: 0;
+    left:700px;
+}
+
+#burger2{
+    position: absolute;
+    width: 350px;
+    background-color: #f8f8f8;
+    height: 900px;
+    top: 0;
+    left: 350px;
+
+}
+
+#closeBurger{
+    position: absolute;
+    left: 720px;
+    top: 20px;
+    font-size: 30px;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: none;
+    border-radius: 5px;
+}
+
+.burger1 ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 40px;
+    font-size: 20px;
+}
+
+.burger1 button{
+    display: flex;
+    background: none;
+    border: none;
+    flex-direction: row;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.burger1 a{
+    color: black;
+}
+.p-1{
+    padding-right:146px;
+}
+.p-2{
+    padding-right:26px;
+}
+.p-3{
+    padding-right:125px;
+}
+.p-4{
+    padding-right:166px;
+}
+.p-5{
+    padding-right:95px;
+}
+
+.gap-btn{
+    gap: 150px;
+}
+.gap-btn2{
+    gap: 192px;
+}
+.gap-btn3{
+    gap: 56px;
+}
+
+
+.burger1 a{
+    text-decoration: none;
+}
+
+.box-txt{
+    margin-top:150px;
+    padding: 20px;
+}
+
+.box-txt ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+}
+
+.box-txt a{
+    text-decoration: none;
+    color: black;
+}
+
+.box-txt h1{
+    font-size: 25px;
+    padding-bottom: 30px;
+}
+
+#slider{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+
+.box-btn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 19%;
+    align-items: center;
+    gap: 80vw;
+}
+
+.box-btn button{
+    font-size: 4vh;
+    background: none;
+    border-radius: 100%;
+    height: 10vh;
+    width:  10vh;
+    color: white;
+    border: 1px solid white;
+}
+
+.fix-bar{
+    background-color: rgb(46, 46, 46);
+    padding: 25px 0;
+    position:sticky;
+    top: 0;
+    z-index: 1;
+    
+}
+
+.fix-bar ul{
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    list-style: none;
+}
+
+.fix-bar ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.box-1{
+    position: relative;
+    overflow: hidden;
+}
+.box-1-text{
+    position: absolute;
+    top: 88%;
+    left: 20px;
+    
+}
+
+.box-1-text a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 190px;
+}
+
+.back-img{
+    position: absolute;
+    height: 60px;
+    border-radius: 15px;
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.26);
+    top: 340px;
+}
+
+.box-1-text a i{
+    font-size: 20px;
+}
+
+.box-car-1{
+    border-radius: 15px;
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.box-1 a img{
+    object-fit: cover;
+    height: 400px;     
+    width: 600px;
+    transition-duration: .22s;
+    
+}
+
+.box-1 a img:hover{
+    transform: scale(1.04);
+}
+
+.box-auto h1{
+    padding: 70px 0;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.box-auto{
+    margin-bottom: 170px;
+}
+
+.car{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.box-car-info{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.box-f-img img{
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.box-f-info{
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+}
+
+.box-text-f{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-f-info span{
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.box-f-info h4{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price h1{
+    padding-bottom: 25px;
+    font-size: 35px;
+}
+
+.price a{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    align-items: center;
+    border-radius: 5px;
+    padding: 15px 25px;
+}
+
+.box-Finder h1{
+    padding: 30px 0 ;
+    font-size: 35px;
+}
+
+.box-car-finder{
+    width: 1440px;
+    overflow-x: scroll;
+    height: 830px;
+    display: flex;
+    gap: 60px;
+    
+}
+
+.box-porshe-car{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 260px;
+    gap: 20px;
+}
+
+.box-img-porshe img{
+    object-fit: cover;
+    width: 500px;
+    height: 180px;
+}
+
+.box-link-porshe a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 7px 18px;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+}
+
+.box-porshe {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.box-porshe h1{
+    padding-bottom: 30px;
+    font-size: 35px;
+}
+
+.box-collection{
+    overflow-x: scroll;
+    display: flex;
+    width: 1440px;
+    gap: 10px;
+}
+
+.box-porshe-model{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-porshe-model img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.box_hide{
+    padding: 0px 30px;
+    padding-top: 10px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.box-info-model h1{
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.box_hide h1{
+    font-size: 26px;
+}
+
+.more a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    
+}
+.more{
+    margin-top: 20px;
+}
+
+.box-porshe-model button{
+    background: none;
+    border: none;
+    margin-top: 14px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.model-box-1,
+.model-box-2{
+    display: flex;
+    gap: 20px;
+}
+
+.model-box-2{
+    margin-top: 50px;
+}
+
+.model-porshe{
+    margin-top: 120px;
+}
+
+.model-porshe h1{
+    font-size: 35px;
+    padding-bottom: 50px;
+}
+
+.box-form{
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    
+}
+
+.form{
+    background-color: rgb(53, 53, 53);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.form h1{
+    color: white;
+    padding-top: 50px;
+    font-size: 40px;
+}
+
+.form #reg{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 30px;
+    align-items: center;
+}
+
+#reg input{
+    padding: 10px;
+    width: 200px;
+    letter-spacing: 1px;
+    border-radius: 7px;
+}
+
+#reg button{
+    background-color: none;
+    border: none;
+    font-size: 30px;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+}
+
+
+.box-ft{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ft-1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.ft-ft2 a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.ft-info ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ft-info ul li {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer{
+    background-color: #0e0e12;
+    width: 100%;
+}
+
+.ft-img img{
+    object-fit: cover;
+    height: 30px;
+    
+}
+
+.ft-img{
+    padding-top: 50px;
+}
+
+.box-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.ft-text{
+    padding-bottom: 50px;
+    margin-top: 20px;
+    
+}
+
+.ft-text ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-content: center;
+    color: white;
+}
+
+.ft-text a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid white;
+}
